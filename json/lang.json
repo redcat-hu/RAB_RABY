@@ -1,0 +1,177 @@
+[
+    {
+        "hu": ["magyar", "en"],
+        "en": ["english", "hu"]
+    },
+    {
+        "iso": "hu",
+        "title": "Rab Ráby Étterem, Szentendre",
+        "meta_desc": "Vendéglő Szentendre belvárosában. Finom magyaros ételek, régiségek, lélegzetelállító beltér, SZÉP kártya elfogadóhely",
+        "restaurant": "Étterem",
+        "since": "1982 óta",
+        "days": ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"],        "preload": {
+            "load": "Betöltés"
+        },
+        "open":["Zárva", "Nyitva"],
+        "nav":{
+            "home": "Főoldal",
+            "menu": "Étlap",
+            "groups": "Csoport",
+            "about": "Rólunk",
+            "contact": "Kapcsolat",
+            "gallery": "Galéria",
+            "sitemap": "Oldaltérkép",
+            "imprint": "Impresszum",
+            "parking": "Parkolás"
+        },
+        "home": {
+            "welcome": "Szeretettel várunk szentendrei Vendéglőnkben, a belvárosban. Finom magyaros ételek, régiségek, lélegzetelállító beltér. 1982 óta.",
+            "parking": "A parkolási rendszer megváltozott, részletek a parkolásról Szentendrén",
+            "open_h": "Nyitvatartás",
+            "faq": "Gyakran Ismételt Kérdések (GYIK)",
+            "dog": "Kutyabarát hely",
+            "garden": "Kerthelyiség",
+            "food": "Kiemelt ételeink",
+            "table": "Asztalfoglalás",
+            "table2": "Kérjük asztalfoglalását telefonon keresztül tegye meg, mert így azonnal be tudjuk jegyezni a foglalását.",
+            "table3": "Asztalfoglalás a 06-26-310-819 telefonszámon lehetséges. Csoportok részére vagy több héttel későbbi foglalások esetén online is lehet asztalt foglalni:",
+            "guest": "Vendégeink írták",
+            "guest_w": "Vélemény írása",
+            "menu": "Étlap megtekintése",
+            "ccard": "Szépkártya elfogadóhely"
+        },
+        "menu":{
+            "food": "Étlap",
+            "drink": "Itallap"
+        },
+        "alt": {
+            "food_1": "539 Panko bundában sült békacombok wok zöldséggel ",
+            "food_2": "529 Rostlapon vasalt filézett csirkecomb mediterrán salátával",
+            "food_3": "708 Túrós palacsinta vanília öntettel",
+            "food_4": "404 Ropogós kacsacomb, párolt pezsgőskáposztával, burgonyával",
+            "redcat": "a weboldal készítője: redcat",
+            "loan": "Támogatott az EU és Magyarország kormánya"
+        },
+        "group":{
+            "title": "Menü csoportoknak",
+            "download": "Letöltés",
+            "desc": "Természetesen más menüket is elkészítünk, valamint a szervezőknek ismételt csoportok étkeztetése esetén jutalékot biztosítunk, megegyezés szerint. <br><br> Amennyiben a menük árai felől érdeklődik, kérjük, aktuális árainkat telefonon vagy e-mailben kérje."
+        },
+        "about": {
+            "title": "Rólunk",
+            "vids": "Videóink",
+            "vip": "A Magyarországra érkező magas rangú politikai vezetők és feleségük is el szoktak látogatni éttermünkbe. Ilyen alkalmakkor örömmel teljesítjük a legmagasabb szintű biztonsági előírásokat.",
+            "desc": "Az éttermet még a vasfüggöny fennállásának idején Németh János és családja alapította 1982-ben. Nevét Jókai Mór Rab Ráby című regénye főhőséről kapta, aki Szentendrén élt és II. József idején oroszlánrészt vállalt a korrupció elleni küzdelemben. <br><br> Az épület, amiből az étterem lett kialakítva, több, mint 100 évvel ezelőtt még kovácsműhelyként működött. Egy néprajzi tárlaton túl, ritka érdekességek is találhatóak az étteremben."
+        },
+        "contact":{
+            "title": "kapcsolat",
+            "card": "digitális névjegykártya",
+            "addr": "2000 Szentendre, Kucsera Ferenc u. 1/a",
+            "cinfo": "Céginformációk",
+            "vat": "Adószám",
+            "vreg": "Cégjegyzék szám"
+        },
+        "404":{
+            "error": "404",
+            "desc": "Oldal nem található"
+        },
+        "footer":{
+            "kozossegi": "Lépj velünk kapcsolatba:",
+            "szoveg": "1982 óta",
+            "contact": "Kapcsolat"
+        },
+        "guest":{
+            "1": ["A kedvenc helyünk Szentendrén, elvarázsló egyedi hangulat, a rengeteg múltat idéző régiség között! Számtalan alkalommal voltunk már itt, de az ember mindig felfedez valami újat... Az ételek háziasak és bőségesek!", "István Matula"],
+            "2": ["Belépve mint egy archív múzeumba lépnénk és mégis nagyon otthonos érzése támad az embernek. A személyzet gyors,figyelmes, az ételek kiválóak.Nagyon jól éreztük magunkat ajánljuk midenkinek!", "Róza Szabóné Nagy"],
+            "3": ["Gyors kiszolgálás, hagyományos magyar konyha. Az étterem hangulata magával ragadó, főleg azok számára, akik szeretik a régiségeket.", "Viktória Neumann"]
+        }
+    },
+    {
+        "iso": "en",
+        "title": "Rab Ráby Restaurant, Szentendre",
+        "meta_desc": "Vendéglő Szentendre belvárosában. Finom magyaros ételek, régiségek, lélegzetelállító beltér, SZÉP kártya elfogadóhely",
+        "restaurant": "Restaurant",
+        "since": "since 1982",
+        "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "preload": {
+            "load": "Loading"
+        },
+        "open":["Close", "Open"],
+        "nav":{
+            "home": "Home",
+            "menu": "Menu",
+            "groups": "Groups",
+            "about": "About Us",
+            "contact": "Contact",
+            "gallery": "Gallery",
+            "sitemap": "Sitemap",
+            "imprint": "Imprint",
+            "parking": "Parking"
+        },
+        "home": {
+            "welcome": "Welcome",
+            "parking": "New parking system in Szentendre. Check the news.",
+            "open_h": "Open hours",
+            "faq": "Frequently Asked Questions (FAQ)",
+            "dog": "Dogs allowed",
+            "garden": "Garden",
+            "food": "Our featured food",
+            "table": "Book a table",
+            "table2": "Please book a table",
+            "table3": "Phone: +36-26-310-819 or online:",
+            "guest": "Ratings",
+            "guest_w": "Write a rating",
+            "menu": "Show menu",
+            "ccard": "Credit cards accepted"
+        },
+        "menu":{
+            "food": "Menu",
+            "drink": "Drinks"
+        },
+        "alt": {
+            "food_1": "539 Panko Breaded Roasted Frog Legs, with Wok Grilled Vegatables",
+            "food_2": "529 Ironed chicken thigh fillet with Mediterranian salad",
+            "food_3": "708 Cottage cheese pancakes with vanilla sauce",
+            "food_4": "404 Crispy duck leg with steamed cabbage and potatoes",
+            "redcat": "the creator of this website: redcat",
+            "loan": "Support from eu and hungary"
+        },
+        "group":{
+            "title": "Menu for groups",
+            "download": "Download",
+            "desc": "Check our menus for groups (EUR)"
+        },
+        "about": {
+            "title": "About Us",
+            "vids": "Our videos",
+            "vip": "From time to time we have the pleasure to welcome some foreign political leaders of high standing and their wives. At these occasions we are ready to observe safety regulations of the highest level.",
+            "desc": "The restaurant was founded by Németh János and his family while the Iron Curtain still existed in 1982. It was named after Rab Ráby, a novel by Jókai Mór, the protagonist of which fought against corruption during the reign of Joseph II and lived in Szentendre.<br><br> The building that was converted into a restaurant was a forge more than 100 years ago. Németh János has been changing the antiquities and bric-a-brac on show continuously since the opening of the restaurant, which greatly delights our guests. Apart from an ethnical collection there are other old curiosities on exhibit, such as the grape press from 1838, the National cash register, the American Heating stove or the still operable polyphone and so on. So far every guest has found his or her favourite piece here."
+        },
+        "contact":{
+            "title": "Contact",
+            "card": "digital business card",
+            "addr": "HU Szentendre, Kucsera Ferenc u. 1/a",
+            "cinfo": "Company informations",
+            "vat": "VAT Number (HU)",
+            "vreg": "Corporate registration number (HU)"
+        },
+        "404":{
+            "error": "Error 404",
+            "desc": "Page not found"
+        },
+        "footer":{
+            "kozossegi": "Get connected with us:",
+            "szoveg": "since 1982",
+            "contact": "Contact"
+        },
+        "guest":{
+            "1": ["Best place in Szentendre to get the beloved Hungarian fisherman soup. It comes with a side of peasant bread and some sought of chili paste. You can ask for more bread if you run out. The restaurant is medieval themed and decked fully with interesting items and trinkets. The prices are very reasonable.", "SHEHAN JAYASEKERA"],
+            "2": ["Super freundliche Bedienung und wuuuuunderbares Essen zum kleinen Preis. Herrlich!", "BJÖRN FRÖHLICH"],
+            "3": ["Очень необычное место. Готовят вкусно, и не очень дорого. Кухня национальная. Очень много старинных вещей. Понравилось.", "СЕРЖ ГОРЕЛЫЙ"]
+        }
+    },
+    {
+        "phone": "+36 26 310 819",
+        "address": "2000 Szentendre, Kucsera Ferenc u. 1/a"
+    }
+]
