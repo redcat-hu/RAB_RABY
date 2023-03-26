@@ -48,23 +48,44 @@
     }
     function PrintOpen($api, $lang_data, $lang_number)
     {
+        $mano = false;
+
         if ($api["status"] === "OK") {
-            $g_json = true;
-        
-            echo '<ul><li>';
+            echo '<div class="online">🟢online</div>';
+
+            // Open/Closed
+            echo '<div class="now"><b>';
             if ($api["result"]["opening_hours"]["open_now"]) {
-                echo $lang_data[$lang_number]["open"][1];
-            } else {
-                echo $lang_data[$lang_number]["open"][0];
+                echo $lang_data[$lang_number]["open"]["status"][1]; } 
+                else 
+                {echo $lang_data[$lang_number]["open"]["status"][0];
             }
-            echo '</li></ul>';
-        
-            var_dump($api["result"]["opening_hours"]["open_now"]);
+            echo '</b><div class="moment">('. $lang_data[$lang_number]["open"]["title"][1] .')</div>';
+            echo '</div>';
+
+            // Title: Opening hours
+            echo '<div><b>'. $lang_data[$lang_number]["open"]["title"][0].':</b></div>';
+
+            // Days
+            echo '<ul>';
+            for ($i=0; $i < count($api["result"]["opening_hours"]["weekday_text"]); $i++) { 
+                if (str_contains($api["result"]["opening_hours"]["weekday_text"][$i], $lang_data[$lang_number]["open"]["status"][0])) {
+                    echo '<li class="closed';
+                    if ($i == date("N")-1) {echo ' active';};
+                    echo '">';
+                } else {
+                    echo '<li class="';
+                    if ($i == date("N")-1) {echo ' active';};
+                    echo '">';
+                }
+                echo $api["result"]["opening_hours"]["weekday_text"][$i];
+                echo '</li>';
+            }
+            echo '</ul>';
+            
+        } else {
+            echo '<div class="offline">🔴offline</div>';
         }
-    }
-
-
-    
+        echo '<a href="parking"><div class="now"><i class="bi bi-p-circle-fill"></i> '. $lang_data[$lang_number]["home"]["parking2"] .'</div></a>';
+    } 
 ?>
-
-

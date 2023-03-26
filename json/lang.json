@@ -9,10 +9,14 @@
         "meta_desc": "Vendéglő Szentendre belvárosában. Finom magyaros ételek, régiségek, lélegzetelállító beltér, SZÉP kártya elfogadóhely",
         "restaurant": "Étterem",
         "since": "1982 óta",
-        "days": ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"],        "preload": {
+        "preload": {
             "load": "Betöltés"
         },
-        "open":["Zárva", "Nyitva"],
+        "open":{
+            "days": ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat", "Vasárnap"],
+            "title": ["Nyitvatartás", "ebben a pillanatban"],
+            "status": ["Zárva", "Nyitva"]
+        },
         "nav":{
             "home": "Főoldal",
             "menu": "Étlap",
@@ -26,8 +30,10 @@
         },
         "home": {
             "welcome": "Szeretettel várunk szentendrei Vendéglőnkben, a belvárosban. Finom magyaros ételek, régiségek, lélegzetelállító beltér. 1982 óta.",
-            "parking": "A parkolási rendszer megváltozott, részletek a parkolásról Szentendrén",
-            "open_h": "Nyitvatartás",
+            "parking": "Hol tudok parkolni?",
+            "parking2": "Parkolás",
+            "parking3": "Közvetlen az étteremnél (piros pont) nem tud parkolni, mert behajtási engedély köteles az övezet. A 2012-es zónában tud parkolni (narancssárga jelölés), a Bajcsy-Zsilinszky Endre utcánál vagy a Bükkös parton. A zöld pontok a parkoló automatákat jelzik. A távolság a vendéglőtől körülbelül 1-2 perc sétálva. Szentendrén hétvégén is kell fizetni a parkolásért!",
+            "moreinfo": "Részletek",
             "faq": "Gyakran Ismételt Kérdések (GYIK)",
             "dog": "Kutyabarát hely",
             "garden": "Kerthelyiség",
@@ -92,11 +98,14 @@
         "meta_desc": "Vendéglő Szentendre belvárosában. Finom magyaros ételek, régiségek, lélegzetelállító beltér, SZÉP kártya elfogadóhely",
         "restaurant": "Restaurant",
         "since": "since 1982",
-        "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "preload": {
             "load": "Loading"
         },
-        "open":["Close", "Open"],
+        "open":{
+            "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "title": ["Opening hours", "at this moment"],
+            "status": ["Closed", "Open"]
+        },
         "nav":{
             "home": "Home",
             "menu": "Menu",
@@ -110,13 +119,15 @@
         },
         "home": {
             "welcome": "Welcome",
-            "parking": "New parking system in Szentendre. Check the news.",
-            "open_h": "Open hours",
+            "parking": "Where can I park?",
+            "parking2": "Parking",
+            "parking3": "Parking zones in Szentendre: Red point is the restaurant, orange color is Zone 2012 (your destination) and the green points are the parking maschines",
+            "moreinfo": "More info",
             "faq": "Frequently Asked Questions (FAQ)",
             "dog": "Dogs allowed",
             "garden": "Garden",
             "food": "Our featured food",
-            "table": "Book a table",
+            "table": "Reservation",
             "table2": "Please book a table",
             "table3": "Phone: +36-26-310-819 or online:",
             "guest": "Ratings",

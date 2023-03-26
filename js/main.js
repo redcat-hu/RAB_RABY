@@ -78,6 +78,7 @@ window.addEventListener('scroll', () => {
 // CLICK
 document.getElementById("darkMode").addEventListener("click", DarkSwitch);
 document.getElementById("mobile_nav").addEventListener("click", MobileMenu);
+document.getElementById("mobile_nav_top").addEventListener("click", MobileMenu);
 document.getElementById("mobile_bg").addEventListener("click", MobileMenu);
 
 // PRELOADER

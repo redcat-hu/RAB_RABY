@@ -40,6 +40,7 @@ html {
     --color_text: black;
     --color_text_2: rgb(243, 243, 243);
     --shad_5: 0 0 5rem hsla(var(--c_h), 30%, var(--c_l), .75);
+    --shad_6: 0 0 4rem hsla(var(--c_h), 50%, 30%, 1);
     
     font-family: 'Roboto', sans-serif;
     word-break: break-word;
@@ -55,6 +56,7 @@ html {
     --color_text: white;
     --color_text_2: rgb(10, 10, 10);
     --shad_5: 0 0 5rem hsla(var(--c_h), var(--c_s), var(--c_l), .3);
+    --shad_6: 0 0 5rem hsla(var(--c_h), 30%, var(--c_l), .8);
 }
 body {
     background-image: linear-gradient(to right, rgb(29, 29, 29), var(--main_color_2), rgb(29, 29, 29));
@@ -386,27 +388,31 @@ height: clamp(500px, 80vh, $max_h);
     align-items: center;
     font-weight: bold;
     text-align: center;
+    gap: 2rem;
 
+    .hello {
+        font-size: 1.2rem;
+        text-align: center;
+        flex-direction: column;
+        i {font-size: 4rem;}
+    }
     a {color: var(--main_color_2);}
-    i {font-size: 5rem;}
     .title {
         grid-column: span 12;
     }
-    div {grid-column: span 12; padding: 1rem;}
+    div {
+        grid-column: span 12; 
+        //padding: 1rem;
+    }
     p {
         justify-self: center;
         max-width: 500px;
-    }
-    .open {
-        justify-self: center;
-        .closed {opacity: .5;}
     }
     .parking {
         text-align: center;
     }
     .faq {
         grid-column: span 12;
-        margin: 1rem;
         background-color: var(--color_bg_trans);
         color: var(--color_text);
         i {font-size: 1rem;}
@@ -495,6 +501,39 @@ height: clamp(500px, 80vh, $max_h);
         max-width: 500px;
         img {height: 100%; width: 100%; object-fit: cover;}
     }
+}
+.open_hours {
+    line-height: normal;
+    text-transform: none;
+    gap: 15px;
+    flex-direction: column;
+    background-color: var(--color_bg_trans_2);
+    color: var(--color_text);
+    padding: 1rem;
+    border-radius: $bord-rad2;
+    justify-self: center;
+    background-color: $shadow_1;
+    b {text-transform: uppercase;}
+    .moment {opacity: .9; font-weight: normal;}
+    .now {
+        b {font-size: 1.2rem;}
+        text-align: center;
+        background-image: linear-gradient(to top, var(--color_m_1), var(--color_m_1b));
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        color: black;
+    }
+    .online {color: #00a552; animation: online 5s infinite};
+    @keyframes online {
+        0% {opacity: .1;};
+        50% {opacity: .7;};
+        100% {opacity: .1;};
+    }
+    .offline {color: red; opacity: .3;}
+    .active {color: var(--color_m_1);}
+    .closed {opacity: .5; font-size: .9rem;}
+    li {text-align: left;}
+    a {margin-top: .5rem; color: var(--color_text);}
 }
 
 //////////////////////////////////////////////// MENU
@@ -701,22 +740,39 @@ display: none;
     padding: 5px;
     padding-left: 20px;
     border-radius: $bord-rad1;
-    box-shadow: var(--shad_5);
+    box-shadow: var(--shad_6);
     flex-wrap: nowrap;
     
     .inner_window {
         background-color: var(--color_m_1);
         box-shadow: $shadow_1;
-        border-radius: 50%;
-        height: $mob_hamb_size; width: $mob_hamb_size;
-        flex-direction: column;
-        gap: 7px;
         div {
             background-color: var(--color_text_2);
-            height: 4px;
-            border-radius: 3px;
-            width: 50%;
         }
+    }
+}
+#mobile_nav_top {
+    display: flex;
+    z-index: 150;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    .hamburger {
+        background-color: var(--color_bg_trans);
+        box-shadow: var(--shad_5);
+    }
+}
+.hamburger {
+    cursor: pointer;
+    border-radius: 50%;
+    flex-direction: column;
+    height: $mob_hamb_size; width: $mob_hamb_size;
+    gap: 7px;
+    div {
+        background-color: var(--color_text);
+        height: 4px;
+        border-radius: 3px;
+        width: 50%;
     }
 }
 
@@ -741,6 +797,20 @@ display: none;
         padding: 2rem;
         border-radius: $bord-rad2;
         i {font-size: 2.5rem;}
+    }
+}
+.parking {
+    background-color: var(--color_bg);
+    padding-top: 125px;
+    height: auto;
+    img {max-width: 100%; border-radius: $bord-rad1;}
+    .inner_window {
+        max-width: 705px;
+        flex-direction: column;
+        z-index: 10;
+        padding: 1rem;
+        border-radius: $bord-rad1;
+        background-color: var(--color_bg);
     }
 }
 #faq {
@@ -828,7 +898,7 @@ footer {
 
 //////////////////////////////////////////////// MEDIA
 @media only screen and (min-width: $pc-w) {
-.only_pc {display: block;}
+.only_pc {display: flex;}
 
 .bg_blur {
     display: none;
@@ -854,8 +924,14 @@ header {
     }
 }
 .welcome {
-    div {
+    .open_hours {
         grid-column: span 4;
+    }
+    .hello {
+        grid-column: span 8;
+    }
+    .other {
+        grid-column: span 12;
     }
 }
 .table {
@@ -881,7 +957,7 @@ header {
 .contact {
     background-image: url(../img/contact.jpg);
 }
-#mobile_nav {
+#mobile_nav, #mobile_nav_top {
     display: none;
 }
 #faq {

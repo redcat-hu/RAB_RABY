@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?= $lang_data[$lang_number]["meta_desc"]; ?>">
 
+    <meta property="og:title" content="Rab Ráby Restaurant" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="<?= 'https://rabraby.hu/' ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+
     <link rel="apple-touch-icon" sizes="180x180" href="<?= $local; ?>img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= $local; ?>img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= $local; ?>img/favicon/favicon-16x16.png">

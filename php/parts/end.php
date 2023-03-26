@@ -12,7 +12,9 @@
     <p><?= $lang_data[$lang_number]["since"]; ?></p>
   </div>
 
-  <div></div>
+  <div class="open_hours f0">
+    <?php PrintOpen($api, $lang_data, $lang_number); ?>
+  </div>
 
   <div></div>
 

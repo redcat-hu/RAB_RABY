@@ -15,7 +15,13 @@
     </div>
   </div>
   <div class="g_rating">
-    <p>Google: 4+
+    <p>Google: 
+    <?php if ($api["status"] === "OK") 
+      {
+        if ($api["result"]["rating"]) {echo $api["result"]["rating"].' ('.$api["result"]["user_ratings_total"].')';};
+      } else {
+        echo '4+';} 
+    ?>
     <br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
     <a target="_blank" href="https://g.page/r/CSa2a1Wf650kEB0/review"><?= $lang_data[$lang_number]["home"]["guest_w"]; ?></a>
   </div>

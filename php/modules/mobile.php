@@ -14,7 +14,13 @@
 <div id="mobile_nav" class="f0 btn_js">
   <?php PrintLogo($lang_data, $lang_number); ?>
 
-  <div class="inner_window f0">
+  <div class="inner_window f0 hamburger">
+    <div></div><div></div><div></div>
+  </div>
+</div>
+
+<div id="mobile_nav_top">
+  <div class="inner_window f0 hamburger">
     <div></div><div></div><div></div>
   </div>
 </div>

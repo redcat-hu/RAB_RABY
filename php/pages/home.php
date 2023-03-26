@@ -1,4 +1,3 @@
-<?php require "php/modules/open.php"; ?>
 <div class="home bg1">
   <div class="bg_main"></div>
   <div id="media"></div>
@@ -15,23 +14,19 @@
 <div class="welcome g0">
   <h1 class="title">Rab Ráby <?= $lang_data[$lang_number]["restaurant"]; ?>, Szentendre (<?= $lang_data[$lang_number]["since"]; ?>)</h1>
 
-  <div class="open only_pc">
-    <div><i class="bi bi-door-open-fill"></i></div>
+  <div class="open_hours only_pc f0">
     <?php PrintOpen($api, $lang_data, $lang_number); ?>
   </div>
 
-  <div>
+  <div class="hello f0">
     <div class="only_pc"><i class="bi bi-cup-hot-fill"></i></div>
     <p><?= $lang_data[$lang_number]["home"]["welcome"]; ?></p>
   </div>
 
-  <div class="parking only_pc">
-    <a href="parking">
-      <div><i class="bi bi-p-circle-fill"></i></div>
-      <p><?= $lang_data[$lang_number]["home"]["parking"]; ?></p>
-    </a>
+  <div class="other f0">
+    <?php if ($lang_number == 1) {echo '<a class="faq btn" href="#faq"><i class="bi bi-question-circle-fill"></i> Gyakran ismételt kérdések</a>';} ?>
+    <a class="btn faq" href="parking"><i class="bi bi-p-circle-fill"></i> <?= $lang_data[$lang_number]["home"]["parking"]; ?></a>
   </div>
-  <?php if ($lang_number == 1) {echo '<a class="faq btn" href="#faq"><i class="bi bi-question-circle-fill"></i> Gyakran ismételt kérdések</a>';} ?>
 </div>
 
 <div class="food">
