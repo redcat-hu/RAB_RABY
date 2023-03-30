@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?= $lang_data[$lang_number]["meta_desc"]; ?>">
+    
+    <title><?= $lang_data[$lang_number]["title"].' - '.$lang_data[$lang_number]["nav"][$page]; ?></title>
 
     <meta property="og:title" content="Rab Ráby Restaurant" />
     <meta property="og:description" content="" />
@@ -11,18 +13,35 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= $local; ?>img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= $local; ?>img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= $local; ?>img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $media; ?>img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= $media; ?>img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= $media; ?>img/favicon/favicon-16x16.png">
 
-    <title><?= $lang_data[$lang_number]["title"]; ?></title>
+    <link rel="stylesheet" href="<?= $redcat_local ?>css/cookie.css?v=<?= time() ?>">
     <link rel="stylesheet" href="<?= $local ?>css/style.css?v=<?= time() ?>">
     <?php if ($lang_data[$lang_number]["iso"]=="hu") {echo '<style>.restaurant {letter-spacing: 5px;}</style>';} ?>
     <script>
       var home = ""
     </script>
+    <?php if ($cookie_2["tracking"] and !$test) {
+      echo
+      "<!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KB2GVSJ');</script>
+      <!-- End Google Tag Manager -->";
+    } ?>
 </head>
-
+<body>
+<?php if ($cookie_2["tracking"] and !$test) {
+      echo
+      '<!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB2GVSJ"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->';
+    } ?>
 <header>
   <div class="topbar">
       <div class="inner">

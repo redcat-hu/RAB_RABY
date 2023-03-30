@@ -44,10 +44,10 @@
 
 
 <?php require_once "php/modules/mobile.php"; ?>
+<div id="cookie"></div>
 
-<script>
-  local = "<?= $local ?>";
-</script>
+<script> local = "<?= $local ?>"; </script>
+<script src="<?= $redcat_local ?>js/cookie.js?v=<?= time() ?>"></script>
 <script src="<?= $local ?>js/main.js?v=<?= time() ?>"></script>
 </body>
 </html>

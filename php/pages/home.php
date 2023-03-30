@@ -32,10 +32,10 @@
 <div class="food">
   <h2 class="title"><?= $lang_data[$lang_number]["home"]["food"]; ?></h2>
   <div class="f0">
-    <img src="<?= $local ?>img/food/01.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["food_1"]; ?>">
-    <img src="<?= $local ?>img/food/02.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["food_2"]; ?>">
-    <img src="<?= $local ?>img/food/03.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["food_3"]; ?>">
-    <img src="<?= $local ?>img/food/04.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["food_4"]; ?>">
+    <img src="<?= $media ?>img/food/01.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["food_1"]; ?>">
+    <img src="<?= $media ?>img/food/02.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["food_2"]; ?>">
+    <img src="<?= $media ?>img/food/03.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["food_3"]; ?>">
+    <img src="<?= $media ?>img/food/04.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["food_4"]; ?>">
   </div>
   <a href="menu" class="btn"><i class="bi bi-book-half"></i> <?= $lang_data[$lang_number]["home"]["menu"]; ?></a>
 </div>
@@ -62,7 +62,7 @@
 <?php if ($lang_number == 1) {require_once "php/modules/faq.php";} ?>
 
 <div class="eu">
-  <div class="image"><a target="_blank" href="<?= $local ?>img/hitel.jpg"><img src="<?= $local ?>img/hitel_mini.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["loan"]; ?>"></a></div>
+  <div class="image"><a target="_blank" href="<?= $media ?>img/hitel.jpg"><img src="<?= $media ?>img/hitel_mini.webp" loading="lazy" alt="<?= $lang_data[$lang_number]["alt"]["loan"]; ?>"></a></div>
 </div>
 
 <script>

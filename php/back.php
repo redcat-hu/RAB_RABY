@@ -1,4 +1,7 @@
 <?php
+set_include_path( $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR );
+$browser_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); // the language of browser (en)
+
 $user_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);    // Pl. HU
 $json = file_get_contents('json/lang.json');
 $lang_data = json_decode($json, JSON_OBJECT_AS_ARRAY);
@@ -41,12 +44,16 @@ $url = explode("/", $url[0]);
 if ($url[1] === "rabraby") {    // Local
     $test = true;
     $local = "/rabraby/";
+    $redcat_local = "/redcat/data/";
+    $media = "/rabraby_media/";
     $page = $url[2] ? $url[2] : "home";
 }
 else                            // Public
 {
     $test = false;
     $local = "/";
+    $redcat_local = "https://red-cat.hu/data/";
+    $media = "/";
     $page = $url[1] ? $url[1] : "home";
 }
 ?>

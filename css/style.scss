@@ -25,6 +25,10 @@ $mob_hamb_size: 55px;
     box-sizing: border-box;
     margin: 0; padding: 0;
 }
+
+//$media: "/rabraby_media/"; // Local (test)
+$media: "../";  // Server (live)
+
 html {
     --c_h: 34; 
     --c_s: 50%; 
@@ -215,8 +219,8 @@ img {box-shadow: $shadow_1;}
 header {
     width: clamp($min_w, 100%, $max_w);
     position: fixed;
-    top: 0;
     transform: translate(-50%, 0);
+    top: 0;
     left: 50%;
     z-index: 50;
 
@@ -340,7 +344,7 @@ header {
 
 //////////////////////////////////////////////// HOME
 .home {
-background-image: url(../img/header.jpg);
+background-image: url("#{$media}img/header.jpg");
 height: clamp(500px, 80vh, $max_h);
 
     #media {
@@ -361,7 +365,6 @@ height: clamp(500px, 80vh, $max_h);
         gap: .5rem;
         z-index: 2;
         font-weight: bold;
-        text-transform: uppercase;
         color: var(--main_color_2);
 
 
@@ -388,7 +391,7 @@ height: clamp(500px, 80vh, $max_h);
     align-items: center;
     font-weight: bold;
     text-align: center;
-    gap: 2rem;
+    row-gap: 2rem;
 
     .hello {
         font-size: 1.2rem;
@@ -401,8 +404,7 @@ height: clamp(500px, 80vh, $max_h);
         grid-column: span 12;
     }
     div {
-        grid-column: span 12; 
-        //padding: 1rem;
+        grid-column: span 12;
     }
     p {
         justify-self: center;
@@ -419,7 +421,7 @@ height: clamp(500px, 80vh, $max_h);
     }
 }
 .table {
-    background-image: url(../img/header_blur.webp);
+    background-image: url("#{$media}img/header_blur.webp");
     background-position: center;
     height: auto;
     padding: 3rem 1rem;
@@ -561,10 +563,10 @@ flex-direction: column;
     }
 }
 .food {
-    background-image: url(../img/food1.webp);
+    background-image: url("#{$media}img/food1.webp");
 }
 .drink {
-    background-image: url(../img/drink1.webp);
+    background-image: url("#{$media}img/drink1.webp");
 }
 h1, h2 {
     font-size: 2rem;
@@ -573,7 +575,7 @@ h1, h2 {
 
 //////////////////////////////////////////////// MENU CSOPORTOKNAK
 .groups {
-    background-image: url(../img/food2_blur.webp);
+    background-image: url("#{$media}img/food2_blur.webp");
     .bg_blur {
         backdrop-filter: blur(20px);
     }
@@ -581,7 +583,7 @@ h1, h2 {
 
 //////////////////////////////////////////////// ABOUT
 .about, .about_home {
-    background-image: linear-gradient(to bottom, var(--color_bg), rgba(0, 0, 0, 0), var(--color_bg_trans)), url(../img/header_blur.webp);
+    background-image: linear-gradient(to bottom, var(--color_bg), rgba(0, 0, 0, 0), var(--color_bg_trans)), url("#{$media}img/header_blur.webp");
 
     .inner_box {
         p {text-align: justify;}
@@ -616,7 +618,7 @@ h1, h2 {
     }
 }
 .vip {
-    background-image: linear-gradient(to bottom, var(--color_bg), rgba(0, 0, 0, 0), var(--color_bg_trans)), url(../img/vip.jpg);
+    background-color: var(--color_bg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -649,7 +651,7 @@ h1, h2 {
 
 //////////////////////////////////////////////// CONTACT
 .contact {
-    background-image: linear-gradient(to top, var(--color_bg), rgba(0, 0, 0, 0)), url(../img/contact_blur.webp);
+    background-image: linear-gradient(to top, var(--color_bg), rgba(0, 0, 0, 0)), url("#{$media}img/contact_blur.webp");
     .inner_box {
         a {
             color: var(--color_text);
@@ -935,7 +937,7 @@ header {
     }
 }
 .table {
-    background-image: url(../img/header.jpg);
+    background-image: url("#{$media}img/header.jpg");
     background-attachment: fixed;
 }
 .menu {
@@ -945,17 +947,17 @@ header {
     }
 }
 .groups {
-    background-image: url(../img/food2.webp);
+    background-image: url("#{$media}img/food2.webp");
 }
 .about {
-    background-image: url(../img/header.jpg);
+    background-image: url("#{$media}img/header.jpg");
 }
 .vip {
     flex-direction: row;
     .left, .right {width: 50vw;}
 }
 .contact {
-    background-image: url(../img/contact.jpg);
+    background-image: url("#{$media}img/contact.jpg");
 }
 #mobile_nav, #mobile_nav_top {
     display: none;

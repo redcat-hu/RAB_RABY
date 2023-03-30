@@ -8,10 +8,9 @@
 </div>
 
 <div class="vip">
-  <div class="bg_blur"></div>
 
   <div class="left">
-    <img src="<?= $local ?>img/vip.jpg" loading="lazy" alt="">
+    <img src="<?= $media ?>img/vip.jpg" loading="lazy" alt="">
   </div>
   
   <div class="right">

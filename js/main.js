@@ -1,12 +1,13 @@
 // VARIABLES
 var before_loadtime = new Date().getTime();
 var mobiMen = false;
+if (local == "/") {var media = "/"; } else {var media = "/rabraby_media/"}
 
 // FUNCTIONS
 function PreLoader() {
     var aftr_loadtime = new Date().getTime();  
     pgloadtime = (aftr_loadtime - before_loadtime) / 1000;
-      var idealLoad = 1.5;
+      var idealLoad = 1;
       if (pgloadtime <= idealLoad) {
         bonusLoad = (idealLoad - pgloadtime)*1000;
       } else {
@@ -19,10 +20,10 @@ function PreLoader() {
 };
 
 function mainVid() {
-  if (pgloadtime <= 1.5 && home == true) {
+  if (pgloadtime <= 1 && home == true) {
     document.getElementById('media').innerHTML =
-    `<video loading="lazy" autoplay loop muted plays-inline poster="${local}img/header.jpg">
-    <source src="${local}img/video_1.mp4" type="video/mp4">
+    `<video loading="lazy" autoplay loop muted plays-inline poster="${media}img/header.jpg">
+    <source src="${media}img/video_1.mp4" type="video/mp4">
     </video>`
   }
 }
