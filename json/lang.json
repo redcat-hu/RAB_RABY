@@ -1,7 +1,12 @@
 [
     {
         "hu": ["magyar", "en"],
-        "en": ["english", "hu"]
+        "en": ["english", "hu"],
+        "info": {
+            "phone": "+3626310819",
+            "mail": "info@rabraby.hu",
+            "gpage": "https://g.page/rabraby?gm"
+        }
     },
     {
         "iso": "hu",
@@ -32,7 +37,7 @@
             "welcome": "Szeretettel várunk szentendrei Vendéglőnkben, a belvárosban. Finom magyaros ételek, régiségek, lélegzetelállító beltér. 1982 óta.",
             "parking": "Hol tudok parkolni?",
             "parking2": "Parkolás",
-            "parking3": "Közvetlen az étteremnél (piros pont) nem tud parkolni, mert behajtási engedély köteles az övezet. A 2012-es zónában tud parkolni (narancssárga jelölés), a Bajcsy-Zsilinszky Endre utcánál vagy a Bükkös parton. A zöld pontok a parkoló automatákat jelzik. A távolság a vendéglőtől körülbelül 1-2 perc sétálva. Szentendrén hétvégén is kell fizetni a parkolásért!",
+            "parking3": "A 2012-es zónában tud parkolni (narancssárga jelölés), a Bajcsy-Zsilinszky Endre utcánál vagy a Bükkös parton. Parkolás akár 39 méter is lehet az étteremtől. A zöld pontok a parkoló automatákat jelzik. A távolság a vendéglőtől körülbelül 1-2 perc sétálva. Szentendrén hétvégén is kell fizetni a parkolásért!",
             "moreinfo": "Részletek",
             "faq": "Gyakran Ismételt Kérdések (GYIK)",
             "dog": "Kutyabarát hely",

@@ -20,9 +20,9 @@
 
   <div>
     <div class="ftitle"><?= $lang_data[$lang_number]["footer"]["contact"]; ?></div>
-    <p><a href="#"><i class="bi bi-geo-alt-fill"></i> 2000 Szentendre, Kucsera Ferenc u. 1/A</a></p>
-    <p><a href="#"><i class="bi bi-telephone-fill"></i> +36-26-310-819</a></p>
-    <p><a href="#"><i class="bi bi-envelope-fill"></i> info@rabraby.hu</a></p>
+    <p><a href="<?= $lang_data[0]["info"]["gpage"]; ?>"><i class="bi bi-geo-alt-fill"></i> 2000 Szentendre, Kucsera Ferenc u. 1/A</a></p>
+    <p><a href="tel:<?= $lang_data[0]["info"]["phone"]; ?>"><i class="bi bi-telephone-fill"></i> +36-26-310-819</a></p>
+    <p><a href="mailto:<?= $lang_data[0]["info"]["mail"]; ?>"><i class="bi bi-envelope-fill"></i> info@rabraby.hu</a></p>
   </div>
 </div>
 

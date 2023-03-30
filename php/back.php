@@ -1,7 +1,5 @@
 <?php
 set_include_path( $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR );
-$browser_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); // the language of browser (en)
-
 $user_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);    // Pl. HU
 $json = file_get_contents('json/lang.json');
 $lang_data = json_decode($json, JSON_OBJECT_AS_ARRAY);
