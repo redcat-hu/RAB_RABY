@@ -1,6 +1,6 @@
 <div class="bg1 other_page imprint">
 <div class="bg_main"></div>
-    <h1 class="title"><?= $lang_data[$lang_number]["nav"]["imprint"]; ?></h1>
+    <h1 class="title"><?= $lang_data[$language[0]]["nav"]["imprint"]; ?></h1>
 
     <h2>A weboldal üzemeltetője</h2>
     <ul>

@@ -1,17 +1,13 @@
-[
-    {
-        "hu": ["magyar", "en"],
-        "en": ["english", "hu"],
-        "info": {
-            "phone": "+3626310819",
-            "mail": "info@rabraby.hu",
-            "gpage": "https://g.page/rabraby?gm"
-        }
+{
+    "info": {
+        "phone": "+3626310819",
+        "mail": "info@rabraby.hu",
+        "gpage": "https://g.page/rabraby?gm"
     },
-    {
+    "hu": {
         "iso": "hu",
         "title": "Rab Ráby Étterem",
-        "meta_desc": "Vendéglő Szentendre belvárosában. Finom magyaros ételek, régiségek, lélegzetelállító beltér, SZÉP kártya elfogadóhely",
+        "meta_desc": "Étterem Szentendre belvárosában ahol régiségek, lélegzetelállító beltér, finom ételek és remek árak várnak. SZÉP kártya elfogadóhely",
         "restaurant": "Étterem",
         "since": "1982 óta",
         "preload": {
@@ -34,7 +30,7 @@
             "parking": "Parkolás"
         },
         "home": {
-            "welcome": "Szeretettel várunk szentendrei Vendéglőnkben, a belvárosban. Finom magyaros ételek, régiségek, lélegzetelállító beltér. 1982 óta.",
+            "welcome": "Szeretettel várunk szentendrei éttermünkben, a belvárosban. Finom ételek, régiségek, lélegzetelállító beltér és kedvező árak, 1982 óta.",
             "parking": "Hol tudok parkolni?",
             "parking2": "Parkolás",
             "parking3": "A 2012-es zónában tud parkolni (narancssárga jelölés), a Bajcsy-Zsilinszky Endre utcánál vagy a Bükkös parton. Parkolás akár 39 méter is lehet az étteremtől. A zöld pontok a parkoló automatákat jelzik. A távolság a vendéglőtől körülbelül 1-2 perc sétálva. Szentendrén hétvégén is kell fizetni a parkolásért!",
@@ -83,13 +79,33 @@
             "vreg": "Cégjegyzék szám"
         },
         "404":{
-            "error": "404",
-            "desc": "Oldal nem található"
+            "title": "Hoppá! 404-es hiba",
+            "desc": "Az oldal nem található amit keresel",
+            "desc_2": "Hasznos linkek helyette:"
         },
         "footer":{
             "kozossegi": "Lépj velünk kapcsolatba:",
             "szoveg": "1982 óta",
             "contact": "Kapcsolat"
+        },
+        "park": {
+            "car": "Navigáció a parkolóhoz",
+            "walk": "navigáció az étteremhez"
+        },
+        "faq": {
+            "paycard_ti": "Fizethetek bankkártyával, SZÉP kártyával?",
+            "paycard_de": "Igen, bankkártyával és az összes forgalomban lévő SZÉP kártyával fizethet nálunk. (American Express kártyát nem tudunk elfogadni)",
+            "park_ti": "Hol parkolhatok?",
+            "park_de": "A parkolás Szentendrén 2022-ben megváltozott: az óvárost csak engedéllyel lehet megközelíteni. A hozzánk legközelebbi parkoló kb 1 perc sétára, a Bajcsy-Zsilinszky Endre utcánál van. (Zóna kódja: 2012)",
+            "park_gu": "Parkolási segédlet",
+            "where_ti": "Hol találom a vendéglőt?",
+            "where_de": "Az étterem Szentendre belvárosában helyezkedik el, a Városháza és a Péter Pál templom között. A centrumban, a Főtértől 1 perc sétával megközelíthető.",
+            "garden_ti": "Van kerthelyiség, terasz?",
+            "garden_de": "Igen, egy hangulatos, szél védett belső udvara van az étteremnek, ami nyáron hűvös, árnyékos.",
+            "dog_ti": "Szabad kutyát bevinni?",
+            "dog_de": "Igen, nyitás óta kutyabarát hely vagyunk.",
+            "event_ti": "Rendezvényeket is vállalnak?",
+            "event_de": "Igen, esküvőket, keresztelőket, születésnapokat, névnapokat, osztálytalálkozókat, könyv bemutatókat, borkostolókat, halotti tort stb."
         },
         "guest":{
             "1": ["A kedvenc helyünk Szentendrén, elvarázsló egyedi hangulat, a rengeteg múltat idéző régiség között! Számtalan alkalommal voltunk már itt, de az ember mindig felfedez valami újat... Az ételek háziasak és bőségesek!", "István Matula"],
@@ -97,10 +113,10 @@
             "3": ["Gyors kiszolgálás, hagyományos magyar konyha. Az étterem hangulata magával ragadó, főleg azok számára, akik szeretik a régiségeket.", "Viktória Neumann"]
         }
     },
-    {
+    "en": {
         "iso": "en",
         "title": "Rab Ráby Restaurant",
-        "meta_desc": "Vendéglő Szentendre belvárosában. Finom magyaros ételek, régiségek, lélegzetelállító beltér, SZÉP kártya elfogadóhely",
+        "meta_desc": "A restaurant in the downtown area of Szentendre where antiquities, breathtaking interior, delicious food, and great prices await.",
         "restaurant": "Restaurant",
         "since": "since 1982",
         "preload": {
@@ -123,7 +139,7 @@
             "parking": "Parking"
         },
         "home": {
-            "welcome": "Welcome",
+            "welcome": "We warmly welcome you to our restaurant in the downtown area of Szentendre. Delicious food, antiques, breathtaking interior, and favorable prices since 1982",
             "parking": "Where can I park?",
             "parking2": "Parking",
             "parking3": "Parking zones in Szentendre: Red point is the restaurant, orange color is Zone 2012 (your destination) and the green points are the parking maschines",
@@ -172,22 +188,38 @@
             "vreg": "Corporate registration number (HU)"
         },
         "404":{
-            "error": "Error 404",
-            "desc": "Page not found"
+            "title": "Oops! Error 404",
+            "desc": "We can't seem to find the page you're looking for.",
+            "desc_2": "Here are some helpful links instead:"
         },
         "footer":{
             "kozossegi": "Get connected with us:",
             "szoveg": "since 1982",
             "contact": "Contact"
         },
+        "park": {
+            "car": "Navigation to park place",
+            "walk": "Navigation to restaurant"
+        },
+        "faq": {
+            "paycard_ti": "Can I pay by credit/debit card?",
+            "paycard_de": "Yes, however, we do not accept American Express cards",
+            "park_ti": "Where can i park?",
+            "park_de": "Parking in Szentendre has changed in 2022: the Old Town can only be accessed with a permit. The nearest parking lot to us is located about a 1-minute walk away, at the Bajcsy-Zsilinszky Endre street. (Zone code: 2012)",
+            "park_gu": "Parking guide",
+            "where_ti": "Where can I find the restaurant?",
+            "where_de": "The restaurant is located in the downtown area of Szentendre, between the City Hall and the Péter Pál Church. It can be reached within a 1-minute walk from the main square, in the center.",
+            "garden_ti": "Is there a garden, terrace?",
+            "garden_de": "Yes, the restaurant has a cozy, wind-protected courtyard that is cool and shaded in the summer.",
+            "dog_ti": "Is the restaurant dog-friendly?",
+            "dog_de": "Yes, we have been a dog-friendly place since open.",
+            "event_ti": "Do you also cater for events?",
+            "event_de": "Yes, we cater for weddings, baptisms, birthdays, name days, class reunions, book launches, wine tastings, funeral receptions, etc."
+        },
         "guest":{
             "1": ["Best place in Szentendre to get the beloved Hungarian fisherman soup. It comes with a side of peasant bread and some sought of chili paste. You can ask for more bread if you run out. The restaurant is medieval themed and decked fully with interesting items and trinkets. The prices are very reasonable.", "SHEHAN JAYASEKERA"],
             "2": ["Super freundliche Bedienung und wuuuuunderbares Essen zum kleinen Preis. Herrlich!", "BJÖRN FRÖHLICH"],
             "3": ["Очень необычное место. Готовят вкусно, и не очень дорого. Кухня национальная. Очень много старинных вещей. Понравилось.", "СЕРЖ ГОРЕЛЫЙ"]
         }
-    },
-    {
-        "phone": "+36 26 310 819",
-        "address": "2000 Szentendre, Kucsera Ferenc u. 1/a"
     }
-]
+}

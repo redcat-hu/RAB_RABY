@@ -1,7 +1,5 @@
 // VARIABLES
 var before_loadtime = new Date().getTime();
-var mobiMen = false;
-if (local == "/") {var media = "/"; } else {var media = "/rabraby_media/"}
 
 // FUNCTIONS
 function PreLoader() {
@@ -22,19 +20,18 @@ function PreLoader() {
 function mainVid() {
   if (pgloadtime <= 1 && home == true) {
     document.getElementById('media').innerHTML =
-    `<video loading="lazy" autoplay loop muted plays-inline poster="${media}img/header.jpg">
-    <source src="${media}img/video_1.mp4" type="video/mp4">
+    `<video loading="lazy" autoplay loop muted plays-inline poster="${php[2]}img/header.jpg">
+    <source src="${php[2]}img/video_1.mp4" type="video/mp4">
     </video>`
   }
 }
 
 function MobileMenu() {
-  if (mobiMen) {
-    mobiMen = false;
-    document.getElementById("window_1").style.display = "none";
+  mobiMen = document.getElementById("window_1");
+  if (mobiMen.style.display != "flex") {
+    mobiMen.style.display = "flex";
   } else {
-    mobiMen = true;
-    document.getElementById("window_1").style.display = "flex";
+    mobiMen.style.display = "none";
   }
 }
 
@@ -55,10 +52,8 @@ function DarkSwitch() {
 
   function DarkIconS() {
     if (document.documentElement.classList.value == "darkMode") {
-      //darkMode.src = "img/sun-fill.svg";
       document.getElementById('darkMode').innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
     } else {
-      //darkMode.src = "img/moon-fill.svg";
       document.getElementById('darkMode').innerHTML = '<i class="bi bi-moon-fill"></i>';
     }
   }
@@ -67,7 +62,6 @@ function DarkSwitch() {
 
 // MAIN
 const navEL = document.querySelector('nav');
-
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 56) {
         navEL.classList.add('scroll');

@@ -2,23 +2,23 @@
 <div class="bg_main"></div>
   <div class="bg_blur"></div>
   <div class="inner_box">
-    <h1 class="title"><?= $lang_data[$lang_number]["about"]["title"]; ?></h1>
-    <p><?= $lang_data[$lang_number]["about"]["desc"]; ?></p>
+    <h1 class="title"><?= $lang_data[$language[0]]["about"]["title"]; ?></h1>
+    <p><?= $lang_data[$language[0]]["about"]["desc"]; ?></p>
   </div>
 </div>
 
 <div class="vip">
 
   <div class="left">
-    <img src="<?= $media ?>img/vip.jpg" loading="lazy" alt="">
+    <img src="<?= $local[2] ?>img/vip.jpg" loading="lazy" alt="">
   </div>
   
   <div class="right">
-    <p><?= $lang_data[$lang_number]["about"]["vip"]; ?></p>
+    <p><?= $lang_data[$language[0]]["about"]["vip"]; ?></p>
   </div>
 
 </div>
 
-<?php if ($lang_number === 1) {require_once "php/modules/faq.php";} ?>
+<?php if ($language[0] === "hu") {require_once "php/modules/faq.php";} ?>
 
 <?php require_once "php/modules/guest.php"; ?>
