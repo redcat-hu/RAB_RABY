@@ -21,10 +21,10 @@ $url = explode("/", $url[0]);
 
 // local / redcat local / media / test
 if ($url[1] === "rabraby") {    // Local
-    $local = ["/rabraby/", "/rabraby_media/", "/redcat_data/", true];
+    $local = ["/rabraby/", "/rabraby_media/", "/redcat_data/data/", true];
     $i = 2;
 } else {                        // Éles
-    $local = ["/", "/", "https://red-cat.hu/data/", false];
+    $local = ["/", "/", "https://red-cat.hu/data/data", false];
     $i = 1;
 }
 
