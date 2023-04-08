@@ -559,40 +559,6 @@ height: clamp(500px, 80vh, $max_h);
     background-image: url("#{$media}img/food1.webp");
     height: clamp(100px, 50vh, $max_h);
 }
-/*.menu {
-display: flex;
-flex-direction: column;
-.container {
-    height: 50vh;
-    width: 100%;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    .btn {
-        padding: 1rem;
-    }
-    p {
-        opacity: .5;
-        font-size: 1.25rem;
-    }
-}
-.food {
-    
-}
-.drink {
-    background-image: url("#{$media}img/drink1.webp");
-}
-h1, h2 {
-    font-size: 2rem;
-}
-}
-*/
 
 //////////////////////////////////////////////// MENU CSOPORTOKNAK
 .groups {
