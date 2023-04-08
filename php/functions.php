@@ -40,10 +40,10 @@
         echo $lang_data[$language[0]]["restaurant"];
         echo '</div></div>';
     }
-    function PrintFlag($local, $page, $language)
+    function PrintFlag($language, $id)
     {
-        echo '<div class="lang">
-            <a href="'. $local[0].$page .'?lang='. $language[1] .'"><img src="https://red-cat.hu/data/flag/'. $language[1] .'.svg" alt="Language Switcher, Flag"></a>
+        echo '<div id="'. $id .'" class="lang">
+            <img src="https://red-cat.hu/data/flag/'. $language[1] .'.svg" alt="Language Switcher, Flag">
             </div>';
     }
     function PrintOpen($api, $lang_data, $language)

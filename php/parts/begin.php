@@ -18,19 +18,17 @@
     <link rel="alternate" hreflang="en" href="https://rabraby.hu/en/<?= $page; ?>"/>
     <link rel="alternate" hreflang="x-default" href="https://rabraby.hu/en/<?= $page; ?>" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $local[1]; ?>img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= $local[1]; ?>img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= $local[1]; ?>img/favicon/favicon-16x16.png">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= $local[2]; ?>img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= $local[2]; ?>img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= $local[2]; ?>img/favicon/favicon-16x16.png">
-
-    <link rel="stylesheet" href="<?= $local[1] ?>css/cookie.css?v=<?= time() ?>">
     <link rel="stylesheet" href="<?= $local[0] ?>css/style.css?v=<?= time() ?>">
     <?php if ($lang_data[$language[0]]["iso"]=="hu") {echo '<style>.restaurant {letter-spacing: 5px;}</style>';} ?>
     <script>
       var home = ""
     </script>
     <?php
-      if ($cookie_2["tracking"] and !$local[3]) {
+      if (!empty($cookie_2["tracking"]) and !$local[3]) {
       echo
       "<!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -43,7 +41,7 @@
 </head>
 <body>
   <?php
-  if ($cookie_2["tracking"] and !$local[3]) {
+  if (!empty($cookie_2["tracking"]) and !$local[3]) {
   echo
   '<!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB2GVSJ"
@@ -71,7 +69,7 @@
       </div>
 
       <div class="center">
-        <?php PrintFlag($local, $page, $language); ?>
+        <?php PrintFlag($language, "lang_1"); ?>
         <div id="darkMode" class="btn_js">
           <i class="bi bi-moon-fill"></i>
         </div>

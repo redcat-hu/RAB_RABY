@@ -307,6 +307,7 @@ header {
 
 //////////////////////////////////////////////// FLAG
 .lang {
+    cursor: pointer;
     position: relative;
     background-color: var(--color_m_1b);
     box-shadow: $shadow_1;
@@ -553,8 +554,12 @@ height: clamp(500px, 80vh, $max_h);
     a {margin-top: .5rem; color: var(--color_text);}
 }
 
-//////////////////////////////////////////////// MENU
+//////////////////////////////////////////////// MENU Food, Drink
 .menu {
+    background-image: url("#{$media}img/food1.webp");
+    height: clamp(100px, 50vh, $max_h);
+}
+/*.menu {
 display: flex;
 flex-direction: column;
 .container {
@@ -578,7 +583,7 @@ flex-direction: column;
     }
 }
 .food {
-    background-image: url("#{$media}img/food1.webp");
+    
 }
 .drink {
     background-image: url("#{$media}img/drink1.webp");
@@ -587,6 +592,7 @@ h1, h2 {
     font-size: 2rem;
 }
 }
+*/
 
 //////////////////////////////////////////////// MENU CSOPORTOKNAK
 .groups {
@@ -956,12 +962,14 @@ header {
     background-image: url("#{$media}img/header.jpg");
     background-attachment: fixed;
 }
+/*
 .menu {
     flex-direction: row;
     div {
         min-height: 100vh;
     }
 }
+*/
 .groups {
     background-image: url("#{$media}img/food2.webp");
 }

@@ -20,8 +20,8 @@ function PreLoader() {
 function mainVid() {
   if (pgloadtime <= 1 && home == true) {
     document.getElementById('media').innerHTML =
-    `<video loading="lazy" autoplay loop muted plays-inline poster="${php[2]}img/header.jpg">
-    <source src="${php[2]}img/video_1.mp4" type="video/mp4">
+    `<video loading="lazy" autoplay loop muted plays-inline poster="${php[1]}img/header.jpg">
+    <source src="${php[1]}img/video_1.mp4" type="video/mp4">
     </video>`
   }
 }
@@ -53,12 +53,21 @@ function DarkSwitch() {
   function DarkIconS() {
     if (document.documentElement.classList.value == "darkMode") {
       document.getElementById('darkMode').innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
+      dm = true;
     } else {
       document.getElementById('darkMode').innerHTML = '<i class="bi bi-moon-fill"></i>';
+      dm = false;
     }
   }
+  if (cookie_consent_level_in["functionality"]) {setCookie("darkmode", dm, 1);}
 }
-
+function langSwitcher() {
+  if (language === "en") { x = "hu"; y = "";
+  } else { x = "en"; y = "en/";
+  }
+if (cookie_consent_level_in["functionality"]) {setCookie("lang", x, 1);}
+window.open(php[0]+y+php[4], "_self");
+}
 
 // MAIN
 const navEL = document.querySelector('nav');
@@ -75,6 +84,8 @@ document.getElementById("darkMode").addEventListener("click", DarkSwitch);
 document.getElementById("mobile_nav").addEventListener("click", MobileMenu);
 document.getElementById("mobile_nav_top").addEventListener("click", MobileMenu);
 document.getElementById("mobile_bg").addEventListener("click", MobileMenu);
+document.getElementById("lang_1").addEventListener("click", langSwitcher);
+document.getElementById("lang_2").addEventListener("click", langSwitcher);
 
 // PRELOADER
 var preLoader = document.getElementById('pre_loader');

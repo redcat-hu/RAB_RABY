@@ -10,7 +10,7 @@
 <div class="vip">
 
   <div class="left">
-    <img src="<?= $local[2] ?>img/vip.jpg" loading="lazy" alt="">
+    <img src="<?= $local[1] ?>img/vip.jpg" loading="lazy" alt="">
   </div>
   
   <div class="right">

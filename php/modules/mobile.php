@@ -5,7 +5,7 @@
     <ul class="f0 btn5">
           <?php PrintMenu($local, $language, $lang_data, $page); ?>
     </ul>
-    <?php PrintFlag($local, $page, $language); ?>
+    <?php PrintFlag($language, "lang_2"); ?>
   </div>
   <div id="mobile_bg"></div>
 </div>

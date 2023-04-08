@@ -48,9 +48,9 @@
 
 <script>
   var language = "<?= $language[0] ?>";
-  var php = ["<?= $local[0] ?>", "<?= $local[1] ?>", "<?= $local[2] ?>", <?= $local[3] ?>];
+  var php = ["<?= $local[0] ?>", "<?= $local[1] ?>", "<?= $local[2] ?>", <?= $local[3] ?>, "<?= $page ?>"];
 </script>
-<script src="<?= $local[1] ?>js/cookie.js?v=<?= time() ?>"></script>
+<script src="<?= $local[2] ?>js/cookie.js?v=<?= time() ?>"></script>
 <script src="<?= $local[0] ?>js/main.js?v=<?= time() ?>"></script>
 </body>
 </html>
